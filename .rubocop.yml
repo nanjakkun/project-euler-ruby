@@ -24,3 +24,6 @@ Style/MultilineBlockChain:
 
 Style/AsciiComments:
   Enabled: false
+
+Layout/SpaceAroundOperators:
+  Enabled: false
