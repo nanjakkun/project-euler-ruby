@@ -1,1 +1,20 @@
 inherit_from: .rubocop_todo.yml
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+# Offense count: 1
+# Cop supports --auto-correct.
+# Configuration parameters: AutoCorrect, AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
+# URISchemes: http, https
+Metrics/LineLength:
+  Max: 200
+
+Style/BlockDelimiters:
+  Enabled: false
+  
+Style/MultilineBlockChain:
+  Enabled: false
