@@ -4,7 +4,7 @@
 # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-THRESHOLD = 4000000
+THRESHOLD = 4_000_000
 
 def fib(n, memo_array = [])
 	if n <= 1
@@ -20,13 +20,15 @@ def fib(n, memo_array = [])
 	end
 end
 
-i = 0
 accum = 0
 
-until accum > THRESHOLD
-	i += 1
-	num = fib(i)
-	accum += num if num.even?
-end
+(0..).lazy.map {|n| 
+	fib(n)
+}.select {|n|
+  n.even?
+}.take_while {|n|
+	accum += n
+  accum < THRESHOLD
+}.force
 
 puts accum # 4613732
