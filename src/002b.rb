@@ -6,13 +6,17 @@
 
 THRESHOLD = 4000000
 
-def fib(n)
-	if n <= 0
-		0
-	elsif n == 1
+def fib(n, memo_array = [])
+	if n <= 1
 		1
 	else
-		fib(n-1) + fib(n-2)
+		if memo_array.length > n
+			memo_array[n]
+		else
+			(fib(n-1, memo_array) + fib(n-2, memo_array)).tap do |num|
+				memo_array[n] = num
+			end
+		end
 	end
 end
 
