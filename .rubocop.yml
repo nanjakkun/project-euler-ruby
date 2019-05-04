@@ -1,5 +1,8 @@
 inherit_from: .rubocop_todo.yml
 
+Layout/SpaceInsideBlockBraces:
+  Enabled: false
+
 Naming/UncommunicativeMethodParamName:
   Enabled: false
 
@@ -17,4 +20,7 @@ Style/BlockDelimiters:
   Enabled: false
   
 Style/MultilineBlockChain:
+  Enabled: false
+
+Style/AsciiComments:
   Enabled: false
