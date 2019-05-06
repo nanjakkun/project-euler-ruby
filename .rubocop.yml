@@ -25,5 +25,12 @@ Style/MultilineBlockChain:
 Style/AsciiComments:
   Enabled: false
 
+Style/NumericPredicate:
+  Enabled: false
+
 Layout/SpaceAroundOperators:
   Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
