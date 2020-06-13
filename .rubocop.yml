@@ -3,7 +3,7 @@ inherit_from: .rubocop_todo.yml
 Layout/SpaceInsideBlockBraces:
   Enabled: false
 
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: false
 
 Metrics/MethodLength:
@@ -13,8 +13,8 @@ Metrics/MethodLength:
 # Cop supports --auto-correct.
 # Configuration parameters: AutoCorrect, AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
 # URISchemes: http, https
-Metrics/LineLength:
-  Max: 200
+Layout/LineLength:
+  Max: 250
 
 Style/BlockDelimiters:
   Enabled: false
