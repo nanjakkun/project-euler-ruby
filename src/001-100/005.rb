@@ -9,4 +9,4 @@
 
 require 'prime'
 
-puts (2..20).flat_map {|n| Prime.prime_division(n) }.group_by{|x| x[0]}.map{|k, v| [k, v.map(&:last).max]}.map{|x, y| x ** y}.reduce(:*)
+puts (2..20).flat_map {|n| Prime.prime_division(n) }.group_by {|x| x[0]}.map {|k, v| [k, v.map(&:last).max]}.map {|x, y| x ** y}.reduce(:*)
