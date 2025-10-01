@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'activesupport', '~> 8.0.2'
+gem 'activesupport', '~> 8.0.3'
 
 gem 'rubocop', require: false
